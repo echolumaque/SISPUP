@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SISPUP.PUPTabs"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:local="clr-namespace:SISPUP"
+            android:TabbedPage.IsSmoothScrollEnabled="True"
+            android:TabbedPage.IsSwipePagingEnabled="True">
+
+    <ContentPage Title="Messages" Icon="baseline_message_black_24dp.png">
+        <ScrollView>
+            <StackLayout>
+                <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Text="Welcome, LUMAQUE, JHERICOH JANQUILL NUCUP
+                   (2019-14161-MN-0)"
+                   FontAttributes="Bold"
+                   Grid.ColumnSpan="5"
+                   Margin="10,60,0,0"
+                   FontFamily="SF-Compact-Text-Medium#SF Compact Text Medium"
+                   FontSize="15"
+                   TextColor="Black"/>
+
+                <Label Text="Inbox"
+                   FontAttributes="Bold"
+                   Margin="10,0,0,30"
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="40"
+                   TextColor="Black"/>
+
+                <Frame  HasShadow="True"
+                   CornerRadius="20"
+                   BackgroundColor="White"
+                   Padding="0"
+                   Margin="10,10,10,0">
+
+                    <Grid Padding="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="2"
+                       Margin="5,0,0,0"
+                       Source="baseline_account_circle_black_48dp.png"
+                       Aspect="AspectFit"/>
+
+                        <Label Grid.Row="0"
+                           Grid.Column="1"
+                           Text="PUP Professor"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                           FontSize="20"/>
+
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="Dami uno ah"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                           FontSize="15"/>
+
+                        <Label x:Name="labelDATE"
+                           Grid.Row="0"
+                           Grid.RowSpan="2"
+                           Grid.Column="2"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+                <!--dito-->
+                <Frame HasShadow="True"
+                   Grid.ColumnSpan="5"
+                   CornerRadius="20"
+                   BackgroundColor="White"
+                   Padding="0"
+                   Margin="10,10,10,0">
+
+                    <Grid Padding="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="2"
+                       Margin="5,0,0,0"
+                       Source="baseline_account_circle_black_48dp.png"
+                       Aspect="AspectFit"/>
+
+                        <Label Grid.Row="0"
+                           Grid.Column="1"
+                           Text="PUP Guard"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                           FontSize="20"/>
+
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="ID mo asan?"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                           FontSize="15"/>
+
+                        <Label x:Name="labelDATE1"
+                           Grid.Row="0"
+                           Grid.RowSpan="2"
+                           Grid.Column="2"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Frame HasShadow="True"
+                   Grid.ColumnSpan="5"
+                   CornerRadius="20"
+                   BackgroundColor="White"
+                   Padding="0"
+                   Margin="10,10,10,0">
+
+                    <Grid Padding="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="2"
+                       Margin="5,0,0,0"
+                       Source="baseline_account_circle_black_48dp.png"
+                       Aspect="AspectFit"/>
+
+                        <Label Grid.Row="0"
+                           Grid.Column="1"
+                           Text="PUP Admin"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                           FontSize="20"/>
+
+                        <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="ASAN FORM 137 MO?!"
+                           TextColor="Black"
+                           HorizontalOptions="Start"
+                           FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                           FontSize="15"/>
+
+                        <Label x:Name="labelDATE2"
+                           Grid.Row="0"
+                           Grid.RowSpan="2"
+                           Grid.Column="2"
+                           TextColor="Black"
+                           VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Section" Icon="baseline_people_black_24dp.png">
+        <ScrollView HeightRequest="3000" Margin="10,60,0,10">
+            <StackLayout>
+
+                <Label Text="Sections by course"
+                       FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                       TextColor="Black"
+                       Margin="10,10,0,0"
+                       FontSize="40"/>
+
+                <Frame
+                    CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Computer Engineering Technology (DCET)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Electrical Engineering Technology (DEET)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Electronics Engineering Technology (DECET)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Information Communication Technology (DICT)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Mechanical Engineering Technology (DMET)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Office Management (DOMT)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Diploma in Office Management (DOMT)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Science in Accountancy (BSA)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Science in Business Administration Major in Financial Management (formerly Bachelor of Science in Banking and Finance) (BSBAFM)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+                
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Science in Management Accounting (BSMA)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Science in Architecture (BS-ARCHI)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Science in Interior Design (BSID)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Arts in English Language Studies (formerly Bachelor of Arts in English) (ABELS)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Arts in Filipinology (ABF)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Arts in Literary and Cultural Studies (ABLCS)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Arts in Philosophy (AB-PHILO)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+                <Frame CornerRadius="20"
+                   HasShadow="True"
+                   BackgroundColor="White">
+                    <Label Text="Bachelor of Performing Arts major in Theater Arts (formerly BA Theater Arts) (BPEA)"
+                       TextColor="Black"
+                       FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular"
+                       FontSize="20"/>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage>
+
+    <ContentPage Title="Registration" Icon="baseline_desktop_windows_black_24dp.png">
+        <Grid VerticalOptions="Center"
+              HorizontalOptions="Center"
+              Margin="10,10,10,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/> 
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0"
+                   Grid.Row="0"
+                   Text="Registration"
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   TextColor="Black"
+                   FontSize="40"
+                   Grid.ColumnSpan="2"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="1"
+                   Text="Student Name: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+            
+            <Label Grid.Column="0"
+                   Grid.Row="2"
+                   Text="Course: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="3"
+                   Text="Status: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="4"
+                   Text="School Year: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="5"
+                   Text="Student Number: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="6"
+                   Text="Year: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="7"
+                   Text="Section: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="8"
+                   Text="Semester: "
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                    TextColor="Black"/>
+             
+            
+            <Label Grid.Column="1"
+                   Grid.Row="1"
+                   Text="LUMAQUE, JHERICOH JANQUILL"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="2"
+                   Text="DIPLOMA IN INFORMATION AND COMMUNICATIONS TECHNOLOGY"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="3"
+                   Text="Continuing (Regular) (25 Unit(s) Allowed)"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="4"
+                   Text="2019-2020"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="5"
+                   Text="2019-14161-MN-0"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="6"
+                   Text="First Year"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="7"
+                   Text="1"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="1"
+                   Grid.Row="8"
+                   Text="Second"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="15"
+                    TextColor="Black"/>
+
+            <Label Grid.Column="0"
+                   Grid.Row="9"
+                   Grid.ColumnSpan="2"
+                   Text="Registration is not yet open"
+                   TextColor="Maroon"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="SF-UI-Display-Regular.otf#SF UI Display Regular "
+                   FontSize="30"
+                   Margin="0,0,0,30"/>
+        </Grid>
+    </ContentPage>
+
+    <ContentPage Title="Profile" Icon="baseline_person_black_24dp.png">
+        <StackLayout>
+            <Label Text="This contains your profile in PUP"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                   FontSize="20"
+                   TextColor="Black"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Schedule" Icon="baseline_schedule_black_24dp.png" />
+
+    <ContentPage Title="Grades" Icon="baseline_format_list_numbered_black_24dp.png" />
+
+    <ContentPage Title="Account" Icon="baseline_account_circle_black_24dp.png" />
+
+    <ContentPage Title="Calendar" Icon="baseline_calendar_today_black_24dp.png" />
+
+    <ContentPage Title="Password" Icon="baseline_security_black_24dp.png" />
+
+    <ContentPage Title="Library" Icon="baseline_book_black_24dp.png"  />
+
+    <ContentPage Title="Survey" Icon="baseline_flag_black_24dp.png"/>
+
+    <ContentPage Title="Clearance" Icon="baseline_done_black_24dp.png"/>
+
+    <ContentPage Title="Log Out" IconImageSource="baseline_exit_to_app_black_24dp.png"/>
+</TabbedPage>

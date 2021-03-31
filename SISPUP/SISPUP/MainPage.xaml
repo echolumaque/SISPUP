@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SISPUP"
+             x:Class="SISPUP.MainPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="PUPPylon.png"
+               Aspect="AspectFill"/>
+
+        <Frame Grid.Column="0"
+               Grid.Row="0"
+               Grid.RowSpan="3"
+               CornerRadius="20"
+               HasShadow="True"
+               BackgroundColor="White"
+               Padding="0"
+               Margin="20,200,20,50">
+            <!--contains login form-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0"
+                       Grid.Row="1"
+                       Text="Sign In"
+                       FontFamily="SF-UI-Display-Bold.otf#SF UI Display Bold"
+                       FontSize="40"
+                       TextColor="Maroon"
+                       Margin="20,20,0,0"
+                       HorizontalOptions="Start"
+                       Grid.ColumnSpan="2"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="2"
+                       Text="Student Number:"
+                       FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"
+                       FontSize="25"
+                       TextColor="Maroon"
+                       Margin="20,0,0,0"
+                       HorizontalOptions="Start"
+                       Grid.ColumnSpan="2"/>
+
+                <Entry Grid.Column="0"
+                       Grid.Row="3"
+                       x:Name="entrySNO"
+                       Placeholder="Enter student number"
+                       Margin="20,0,20,25"
+                       FontFamily=""
+                          Grid.ColumnSpan="2"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="4"
+                       Text="Password:"
+                        FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"
+                       FontSize="25"
+                       TextColor="Maroon"
+                       Margin="20,0,0,0"
+                       HorizontalOptions="Start"
+                       Grid.ColumnSpan="2"/>
+
+                <Entry Grid.Column="0"
+                       Grid.Row="5"
+                       x:Name="entryPW"
+                       Placeholder="Enter password"
+                       Margin="20,0,20,25"
+                       FontFamily=""
+                       Grid.ColumnSpan="2"
+                       IsPassword="True"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="6"
+                       Text="Birthday:"
+                       FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"
+                       FontSize="25"
+                       TextColor="Maroon"
+                       Margin="20,0,0,0"
+                       HorizontalOptions="Start"
+                          Grid.ColumnSpan="2"/>
+
+                <DatePicker Grid.Column="0"
+                            Grid.Row="7"
+                            x:Name="dateBDAY"
+                            Format="MMMM dd, yyyy"
+                            FontFamily=""
+                            Grid.ColumnSpan="2"
+                            Margin="20,0,20,25"/>
+
+                <Button Grid.Column="0"
+                        Grid.Row="8"
+                        x:Name="btnCLEAR"
+                        BackgroundColor="Maroon"
+                        Text="Clear"
+                       FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.ColumnSpan="1"
+                        Margin="0,0,0,20"
+                        Clicked="BtnCLEAR_Clicked"/>
+
+                <Button Grid.Column="1"
+                        Grid.Row="8"
+                        x:Name="btnLOGIN"
+                        BackgroundColor="Maroon"
+                        Text="Login"
+                       FontFamily="SF-Compact-Text-Medium.otf#SF Compact Text Medium"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.ColumnSpan="1"
+                        Margin="0,0,0,20"
+                        Clicked="BtnLOGIN_ClickedAsync"/>
+
+            </Grid>
+            
+        </Frame>
+        <Frame Grid.Column="0"
+               Grid.Row="0"
+               CornerRadius="20"
+               HorizontalOptions="Center"
+               Margin="0,150,0,80"
+               BackgroundColor="Transparent"
+               Padding="0">
+
+            <Image Source="PUPLogo.png"
+                   Aspect="AspectFit"/> <!--dito yung pic-->
+        </Frame>
+
+    </Grid>
+    
+</ContentPage>
